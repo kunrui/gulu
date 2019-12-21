@@ -9,7 +9,12 @@
 </template>
 
 <script>
+import Icon from './icon'
+
 export default {
+    components: {
+        gIcon: Icon
+    },
     props: {
         icon: {
             type: String,
