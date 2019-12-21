@@ -1,8 +1,6 @@
 <template>
     <button  class="g-button" :class="[iconPosition ? `icon-${iconPosition}` : '']">
-        <svg v-if="icon" class="icon">
-            <use :xlink:href="`#i-${icon}`"></use>
-        </svg>
+        <g-icon v-if="icon" :icon="icon"></g-icon>
         <div>
             <slot />
         </div>
@@ -11,19 +9,27 @@
 
 <script>
 export default {
-    props: [
-        'icon',
-        'iconPosition'
-    ]
+    props: {
+        icon: {
+            type: String,
+            default: ''
+        },
+        iconPosition: {
+            type: String,
+            default: '',
+            validator: function (value) {
+                return ['', 'left', 'right'].indexOf(value) !== -1
+            }
+        }
+    }
 }
 </script>
-
+ 
 <style lang="scss" scoped>
     .g-button {
         font-size: var(--font-size);
         height: var(--button-height);
         padding: 0 1em;
-        font: inherit;
         border-radius: var(--border-radius);
         border: 1px solid var(--border-color);
         background: var(--button-bg);
