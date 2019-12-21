@@ -22,6 +22,10 @@
             --border-color: #999;
             --border-color-hover: #666;
         }
+
+        #app {
+            margin: 20px;
+        }
     </style>
 </head>
 <body>
@@ -38,6 +42,17 @@
         <g-button icon="setting" icon-position="left" :loading="loadingStatus" @click="loadingStatus = !loadingStatus">
             按钮四
         </g-button>
+        <g-button-group>
+            <g-button icon="left" icon-position="left">
+                按钮左
+            </g-button>
+            <g-button>
+                中间的
+            </g-button>
+            <g-button icon="right" icon-position="right">
+                按钮右
+            </g-button>
+        </g-button-group>
     </div>
     <script src="//at.alicdn.com/t/font_1576163_ucfspwgujtc.js"></script>
     <script src="./src/app.js"></script>
