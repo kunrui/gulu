@@ -22,12 +22,29 @@
             --border-color: #999;
             --border-color-hover: #666;
         }
+
+        .icon {
+            width: 1em;
+            height: 1em;
+        }
     </style>
 </head>
 <body>
     <div id="app">
-        <g-button></g-button>
+        <g-button>
+            按钮一
+        </g-button>
+        <g-button icon="setting">
+            按钮二
+        </g-button>
+        <g-button icon="setting" icon-position="right">
+            按钮三
+        </g-button>
+        <g-button icon="setting" icon-position="left">
+            按钮四
+        </g-button>
     </div>
+    <script src="//at.alicdn.com/t/font_1576163_eg34ofxojdk.js"></script>
     <script src="./src/app.js"></script>
 </body>
 </html>
