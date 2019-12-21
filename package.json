@@ -4,7 +4,7 @@
   "description": "轮子",
   "main": "index.js",
   "scripts": {
-    "dev-test": "parcel watch test/* --no-cache & karma start",
+    "dev-test": "karma start & parcel watch test/*",
     "test": "parcel build test/* --no-minify && karma start --single-run"
   },
   "repository": {
