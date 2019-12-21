@@ -64,7 +64,7 @@ export default {
         }
         &.icon-right {
             > .icon {
-                order: 2;
+                order: 1;
                 margin-right: 0;
                 margin-left: .1em;
             }
