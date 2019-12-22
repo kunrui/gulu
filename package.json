@@ -1,8 +1,8 @@
 {
-  "name": "gulu",
+  "name": "rui-gulu",
   "version": "0.0.1",
   "description": "轮子",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev-test": "karma start & parcel watch test/*",
     "test": "parcel build test/* --no-minify && karma start --single-run"
