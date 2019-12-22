@@ -1,6 +1,6 @@
 {
   "name": "rui-gulu",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "轮子",
   "main": "dist/index.js",
   "scripts": {
